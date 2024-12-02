@@ -33,6 +33,7 @@ A web application that calculates your age in days, hours, and minutes and prese
 ├── styles.css       # CSS for styling (inline in HTML for this project)
 ├── script.js        # JavaScript logic (inline in HTML for this project)
 └── README.md        # Project documentation
+ ```
 ## 🌐 Live Demo
 You can access the application here: [Age in Days with Diverse Milestones](#)  
 (*Replace with your deployed link, e.g., Vercel deployment URL*)
