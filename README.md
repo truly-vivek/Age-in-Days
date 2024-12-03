@@ -71,7 +71,7 @@ Contributions are welcome! Please follow these steps:
 ---
 
 ## 📜 License
-This project is licensed under the [MIT License](https://img.shields.io/badge/License-MIT-blue.svg).
+This project is licensed under the [MIT License](https://github.com/truly-vivek/Age-in-Days/blob/main/LICENSE).
 
 ---
 
