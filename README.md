@@ -23,7 +23,7 @@ A web application that calculates your age in days, hours, and minutes and prese
 ---
 
 ## 🖼️ Preview
-[Live Milestone Calculator](https://daysold.vercel.app/)
+[Live Milestone Calculator](https://ageindays.vercel.app/)
 
 ---
 
@@ -35,7 +35,7 @@ A web application that calculates your age in days, hours, and minutes and prese
 └── README.md        # Project documentation
  ```
 ## 🌐 Live Demo
-You can access the application here: [Age in Days with Diverse Milestones](#)  
+You can access the application here: [Age in Days with Diverse Milestones](https://ageindays.vercel.app/)  
 (*Replace with your deployed link, e.g., Vercel deployment URL*)
 
 ---
