@@ -7,6 +7,7 @@
     <meta name="keywords" content="age calculator, milestones, web app, vercel deployment">
     <meta name="robots" content="index, follow">
     <title>Age in Days with Diverse Milestones | Calculate Your Age in Days and Explore Fun Milestones</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Age in Days with Diverse Milestones | Calculate Your Age" />
@@ -112,6 +113,55 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+
+        .share-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .share-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .share-buttons a,
+        .share-buttons button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .share-buttons a.instagram { background: #e4405f; }
+        .share-buttons a.facebook { background: #3b5998; }
+        .share-buttons a.twitter { background: #1da1f2; }
+        .share-buttons a.whatsapp { background: #25d366; }
+        .share-buttons a.linkedin { background: #0077b5; }
+        .share-buttons button { background: #2d2f2e; }
+        .share-buttons a.share { background: #FFC107; }
+        .share-buttons a:hover, .share-buttons button:hover { opacity: 0.8; }
+        .copy-link input {
+            padding: 10px;
+            width: 70%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .copy-link button, .download-button button  {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .copy-link button:hover, .download-button button:hover {
+            background: #0056b3;
+        }
+
     </style>
 
 <script type="application/ld+json">
@@ -140,6 +190,7 @@
 </head>
 <body>
     <main>
+        <div id="capture-area">
         <h1>Calculate Your Age with Special Milestones</h1>
         <div class="container">
             <label for="year">Enter your birth year:</label>
@@ -155,7 +206,124 @@
         </div>
         <div class="result" id="result"></div>
         <div class="milestones" id="milestones"></div>
+       </div>     
     </main>
+
+
+    <div class="share-container">
+    <h2>Share Milestones!</h2>
+    <!-- Social Media Buttons -->
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://ageindays.vercel.app" target="_blank" class="facebook">
+            <i class="fab fa-facebook"></i> Share on Facebook
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=http://ageindays.vercel.app&text=Check%20out%20this%20amazing%20age%20calculator!" target="_blank" class="twitter">
+            <i class="fab fa-twitter"></i> Share on X-Twitter
+        </a>
+        <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20amazing%20age%20calculator!%20http://ageindays.vercel.app" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i> Share on WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://ageindays.vercel.app" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin"></i> Share on LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/direct/inbox/" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> Share on Instagram
+        </a>
+        <script>
+            document.querySelector('.instagram').addEventListener('click', function() {
+                navigator.clipboard.writeText('Check out this amazing age calculator! http://ageindays.vercel.app');
+                
+            });
+        </script>
+        
+<!-- Web Share API -->
+
+<button onclick="sharePage()">Share via Device</button>
+
+
+<button onclick="downloadAsImage()">Download as Image</button>
+
+
+    </div>
+
+  
+   
+</div>
+
+
+<script>
+
+    function downloadAsImage() {
+                const captureArea = document.getElementById('capture-area');
+    
+                html2canvas(captureArea, {
+                    allowTaint: true, // Allow cross-origin images
+                    useCORS: true,   // Use CORS for external resources
+                    scale: 2         // Increase resolution
+                })
+                .then(canvas => {
+                    // Convert canvas to image URL
+                    const imageURL = canvas.toDataURL('image/png');
+    
+                    // Create a temporary link element
+                    const link = document.createElement('a');
+                    link.download = 'AgeInDays.png'; // Set download filename
+                    link.href = imageURL;
+    
+                    // Programmatically click the link to trigger download
+                    link.click();
+                })
+                .catch(error => {
+                    console.error('Failed to capture the image:', error);
+                    alert('An error occurred while capturing the image. Please try again.');
+                });
+            }
+    
+            // Copy to Clipboard Function
+            function copyToClipboard() {
+                const copyText = document.getElementById("share-url");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+                navigator.clipboard.writeText(copyText.value)
+                    .then(() => {
+                        alert("Link copied to clipboard!");
+                    })
+                    .catch((err) => {
+                        console.error("Could not copy text: ", err);
+                    });
+            }
+    
+            // Web Share API Function
+            function sharePage() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Age in Days with Diverse Milestones',
+                        text: 'Check out this amazing age calculator!',
+                        url: 'http://ageindays.vercel.app',
+                    })
+                    .then(() => console.log("Thanks for sharing!"))
+                    .catch((error) => console.error("Error sharing:", error));
+                } else {
+                    alert("Web Share API is not supported in this browser.");
+                }
+            }
+    
+             // Download File Function
+             function downloadFile() {
+                const details = `
+                    Age in Days with Diverse Milestones
+                    ------------------------------------
+                    Website URL: http://ageindays.vercel.app
+                    Share this tool with your friends and explore milestones like palindromes, Fibonacci numbers, and more!
+                `;
+                const blob = new Blob([details], { type: "text/plain" });
+                const link = document.createElement("a");
+                link.href = window.URL.createObjectURL(blob);
+                link.download = "AgeDetails.txt";
+                link.click();
+            }
+        </script>
 
     <footer>
         <p>&copy; 2024 Age in Days. All rights reserved. | <a href="Privacy Policy.html">Privacy Policy</a> | <a href="Terms of Service.html">Terms of Service</a></p>
