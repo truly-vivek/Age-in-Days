@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ageindays.vercel.app/sitemap.xml
