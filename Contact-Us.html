@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us for questions, feedback, or suggestions about the Age in Days website.">
+    <title>Contact Us</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Split Screen Layout */
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Left Section */
+        .left-section {
+            flex: 1;
+            background: url('AgeinDays.jpg') no-repeat center center/cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .left-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .left-section p {
+            font-size: 1.2rem;
+        }
+
+        /* Right Section */
+        .right-section {
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 60px;
+        }
+        .right-section h2 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .right-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        form input,
+        form textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form input:focus,
+        form textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+        form .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        form .checkbox-container input {
+            margin-right: 10px;
+        }
+        form button {
+            padding: 12px;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Hide Left Section on Mobile */
+        @media (max-width: 768px) {
+            .left-section {
+                display: none;
+            }
+            .right-section {
+                flex: 1 1 100%;
+                padding: 20px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+
+         /* Popup Overlay Styling */
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popup-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 400px;
+        width: 80%;
+        color: #333;
+        font-family: Arial, sans-serif;
+    }
+
+    .popup-content h2 {
+        margin-bottom: 10px;
+        color: #4CAF50;
+    }
+
+    .popup-content p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+
+    .popup-content button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .popup-content button:hover {
+        background-color: #388E3C;
+    }
+    </style>
+</head>
+<body>
+    <!-- Container for Split Screen -->
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div>
+                
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>Contact Us</h2>
+            <p>Please fill in the form below to get in touch with us.</p>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I've read and agree with <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup Overlay -->
+<div id="popup" class="popup-overlay">
+    <div class="popup-content">
+        <h2>Thank You!</h2>
+        <p>Your form has been submitted successfully.</p>
+        <button id="closePopup">Close</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Age in Days. All rights reserved. | <a href="/Privacy-Policy.html">Privacy Policy</a> | <a href="/Terms-of-Service.html">Terms of Service</a> | <a href="/About-Us.html">About Us</a> | <a href="/Contact-Us.html">Contact Us</a>
+    </footer>
+
+
+    <!-- Add JavaScript for Popup -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector("form");
+        const popup = document.getElementById("popup");
+        const closePopup = document.getElementById("closePopup");
+
+        // Simulate form submission
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual submission for demo purposes
+
+            // Show Popup
+            popup.style.display = "flex";
+
+            // Optional: Clear form fields
+            form.reset();
+        });
+
+        // Close Popup Event
+        closePopup.addEventListener("click", function() {
+            popup.style.display = "none";
+        });
+    });
+</script>
+</body>
+</html>

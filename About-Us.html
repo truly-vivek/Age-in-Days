@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Age in Days</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* About Us Content */
+        .about-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 10%;
+            background-color: #fff;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mission Section */
+        .mission-section {
+            background-color: #f2f2f2;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .mission-section h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .mission-section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 5%;
+            }
+
+            .about-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+            }
+
+            .about-image img {
+                margin-top: 20px;
+                width: 90%;
+            }
+
+            .mission-section {
+                padding: 30px 5%;
+            }
+
+            .mission-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .mission-section p {
+                font-size: 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-text">
+            <h2>Welcome to Age in Days</h2>
+            <p>
+                At <strong>Age in Days</strong>, our mission is to help users calculate their age in days, explore interesting milestones, and provide a unique way to reflect on their life's journey.
+            </p>
+            <p>
+                Whether you're curious about how many days you've been alive or want to know specific milestones like your 10,000th day, our tool delivers quick and accurate results.
+            </p>
+            <p>
+                We believe that life's small moments matter. Our platform helps you look back, celebrate milestones, and gain perspective—all in a fun and interactive way.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="AgeinDays.jpg" alt="About Us Image">
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <h2>Our Purpose</h2>
+        <p>
+            Our purpose is to provide a simple yet powerful platform for calculating and celebrating life's important days. Whether you're planning birthdays, anniversaries, or tracking life achievements, Age in Days is here to make it easy and enjoyable.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Age in Days. All rights reserved. | <a href="/Privacy-Policy.html">Privacy Policy</a> | <a href="/Terms-of-Service.html">Terms of Service</a> | <a href="/About-Us.html">About Us</a> | <a href="/Contact-Us.html">Contact Us</a>
+    </footer>
+</body>
+</html>
