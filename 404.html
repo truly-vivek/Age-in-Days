@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        /* General Reset */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .container h1 {
+            font-size: 60px;
+            color: #4CAF50;
+        }
+        .container p {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+        .home-button {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+        }
+        /* Mobile View */
+        @media screen and (max-width: 600px) {
+            .container h1 {
+                font-size: 48px;
+            }
+            .container p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <a href="index.html" class="home-button">Back to Home</a>
+    </div>
+</body>
+</html>
