@@ -25,7 +25,7 @@
     <meta name="twitter:image" content="http://ageindays.vercel.app/AgeinDays.jpg" />
 
     <!-- Favicon -->
-    <link rel="icon" href="AID.jpg" type="image/x-icon">
+    <link rel="icon" href="./assets/AID.jpg" type="image/x-icon">
     
     
     <meta name="google-site-verification" content="JHrE4ZuVPTDz8pbePVQsJ8wqVQ9vWA7psQe625pGrCk" />
@@ -103,8 +103,28 @@
             background-color: #333;
         }
 
-       
+        body.dark-mode .blog-card{
+            background-color: #333;
+            border: 2px solid #4CAF50;
+            
+        }
 
+        body.dark-mode .blog-card p{
+            color: rgb(224, 216, 216)
+        }
+
+        body.dark-mode .blog-card .blog-date {
+            color: rgb(159, 147, 147)
+        }
+
+
+        body.dark-mode .more-blogs a{
+            color: #4CAF50
+        }
+
+        body.dark-mode .blog-container p{
+            color: rgb(224, 216, 216)
+        }
 
         /* Toggle Button */
         .dark-mode-toggle {
@@ -335,6 +355,111 @@
 
 
 
+/* Blog Section Styling */
+.blog-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.blog-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+
+
+
+.blog-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Blog Cards Grid */
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Blog Card */
+/* Blog Card Styling */
+/* Blog Card Container */
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 350px; /* Set a fixed width */
+    text-align: left; /* Align content to the left */
+    font-family: Arial, sans-serif;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Blog Title */
+.blog-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #28a745; /* Green text color */
+    margin-bottom: 10px;
+}
+
+.blog-title a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #28a745; /* Green text color */
+    margin-bottom: 10px;
+    text-decoration:none;
+}
+
+/* Blog Date */
+.blog-card .blog-date {
+    font-size: 0.9rem;
+    color: #777; /* Light gray text */
+    margin-bottom: 15px;
+}
+
+/* Blog Description */
+.blog-description {
+    font-size: 1rem;
+    color: #555; /* Slightly darker gray */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Read More Link */
+.blog-read-more {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555; /* Green */
+    text-decoration: none;
+}
+
+.blog-read-more:hover {
+    text-decoration: underline;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Enforce 16:9 aspect ratio */
+    object-fit: cover; /* Ensures the image scales and crops properly */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin-bottom: 10px; /* Optional: Adds spacing below the image */
+}
+
+
+
+
     </style>
 
 <script type="application/ld+json">
@@ -436,8 +561,79 @@
         <div class="result" id="result"></div>
         <div class="milestones" id="milestones"></div>
         </div>
+
+
+
+        <!-- Blog Cards Section -->
+        <section class="blog-container" id="blog-cards">
+            <h1>Explore Our Age Milestones Blogs</h1>
+            <p>Learn about fun and fascinating milestones such as primes, palindromes, and historical events!</p>
+            <div class="blog-cards">
+                
+                
+                
+               
+
+
+<div class="blog-card">
+    <img src="./assets/A.jpg" alt="Cultural Milestones Age">
+    <h3 class="blog-title"> <a href="./blogs/astronomical-milestones-age.html">Astronomical Milestones: Time and Space in Your Age</a></h3>
+    <p class="blog-date">Published on: March 5, 2024</p>
+    <p class="blog-description">
+        Your age can align with cosmic events like planetary revolutions or solar cycles.
+    </p>
+    <a href="./blogs/astronomical-milestones-age.html" class="blog-read-more">Read More</a>
+</div>
+
+
+
+<div class="blog-card">
+    <img src="./assets/H.jpg" alt="Cultural Milestones Age">
+    <h3 class="blog-title"> <a href="./blogs/historical-milestones-age.html">Historical Events and Your Age Milestones</a></h3>
+    <p class="blog-date">Published on: March 20, 2024</p>
+    <p class="blog-description">
+        Align your age milestones with key historical events. Discover how important these moments.
+    </p>
+    <a href="./blogs/historical-milestones-age.html" class="blog-read-more">Read More</a>
+</div>
+
+
+
+
+
+
+
+ <!-- Blog Post: Mirror Number Milestones -->
+
+ <div class="blog-card">
+    <img src="./assets/M.jpg" alt="Cultural Milestones Age">
+    <h3 class="blog-title"> <a href="./blogs/mirror-numbers-age.html">Mirror Numbers: When Your Age Reflects Symmetry</a></h3>
+    <p class="blog-date">Published on: April 15, 2024</p>
+    <p class="blog-description">
+        Explore how these unique ages can mark significant milestones in your life's journey.
+    </p>
+    <a href="./blogs/mirror-numbers-age.html" class="blog-read-more">Read More</a>
+</div>
+
+
+
+
+
+            </div>
+
+            <!-- More Blogs Button -->
+    <div class="more-blogs">
+        <a href="blog.html" class="blog-read-more">More Blogs</a>
+    </div>
+        </section>
+        
+
     </main>
 
+
+
+
+    
 
 <div class="share-container">
     <h2>Share Milestones!</h2>
@@ -547,6 +743,12 @@ let currentStep = 1;
     }
 
  // Submit the form
+ function hideBlogCards() {
+    const blogCards = document.getElementById('blog-cards');
+    blogCards.style.display = 'none';
+}
+
+// Update your submitForm function to call hideBlogCards
 function submitForm(mode) {
     let year, month, day;
 
@@ -565,16 +767,17 @@ function submitForm(mode) {
         return;
     }
 
-    //alert(`Your birthdate is ${year}-${month}-${day}`);
     // Proceed with your logic
-
     const birthDate = new Date(year, month - 1, day);
-            const today = new Date();
+    const today = new Date();
 
-            if (birthDate > today) {
-                alert("Your birthdate cannot be in the future.");
-                return;
-            }
+    if (birthDate > today) {
+        alert("Your birthdate cannot be in the future.");
+        return;
+    }
+
+    // Hide blog cards on calculation
+    hideBlogCards();
 
             const differenceInMs = today - birthDate;
             const daysOld = Math.floor(differenceInMs / (1000 * 60 * 60 * 24));
@@ -816,7 +1019,7 @@ function submitForm(mode) {
         </script>
 
     <footer>
-        &copy; 2025 Age in Days. All rights reserved. | <a href="/Privacy-Policy.html">Privacy Policy</a> | <a href="/Terms-of-Service.html">Terms of Service</a> | <a href="/About-Us.html">About Us</a> | <a href="/Contact-Us.html">Contact Us</a>
+        &copy; 2025 Age in Days. All rights reserved. | <a href="/blog.html">Blogs</a> | <a href="/Privacy-Policy.html">Privacy Policy</a> | <a href="/Terms-of-Service.html">Terms of Service</a> | <a href="/About-Us.html">About Us</a> | <a href="/Contact-Us.html">Contact Us</a>
     </footer>
 
     <script>
