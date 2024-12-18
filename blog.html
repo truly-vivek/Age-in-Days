@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore informative articles on age calculation, milestones like prime numbers, Fibonacci sequence, and more!">
+    <meta name="keywords" content="age calculator, prime numbers, milestones, fibonacci, palindrome numbers">
+    <meta name="robots" content="index, follow">
+    <title>Age Milestones Blog | Explore Fun Facts and Calculations</title>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Age Milestones Blog | Explore Fun Facts and Calculations">
+    <meta property="og:description" content="Discover articles on age calculation, milestones, and interesting facts related to prime numbers and Fibonacci sequence.">
+    <meta property="og:image" content="http://ageindays.vercel.app/./assets/AID.jpg">
+    <meta property="og:url" content="http://ageindays.vercel.app/blog.html">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Age Milestones Blog | Explore Fun Facts and Calculations">
+    <meta name="twitter:description" content="Discover articles on age calculation, milestones, and interesting facts related to prime numbers and Fibonacci sequence.">
+    <meta name="twitter:image" content="http://ageindays.vercel.app/./assets/AID.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/AID.jpg" type="image/x-icon">
+
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Blog Cards */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .blog-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-content {
+            padding: 15px;
+        }
+        .blog-title a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .post-date {
+            font-size: 0.9rem;
+            color: #888;
+            margin: 5px 0;
+        }
+        .blog-desc {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .read-more {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Enforce 16:9 aspect ratio */
+    object-fit: cover; /* Ensures the image scales and crops properly */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin-bottom: 10px; /* Optional: Adds spacing below the image */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Milestone Blogs</h1>
+        <div class="blog-grid">
+
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+                <img src="./assets/PN.jpg" alt="Prime Numbers  Age">
+                <div class="blog-content">
+                    <h2 class="blog-title"><a href="./blogs/prime-numbers-age.html">What Is the Significance of Prime Numbers in Your Age?</a></h2>
+                    <p class="post-date">Published on: January 10, 2024</p>
+                    <p class="blog-desc">Prime numbers have fascinating properties, and they can show up in your age calculations in surprising ways. Read on to discover how prime numbers shape our milestones!</p>
+                    <a href="./blogs/prime-numbers-age.html" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+                <img src="./assets/FS.jpg" alt="Fibonacci Sequence Age">
+                <div class="blog-content">
+                    <h2 class="blog-title"><a href="./blogs/fibonacci-age.html">Fibonacci Sequence: A Hidden Pattern in Your Life's Milestones</a></h2>
+                    <p class="post-date">Published on: December 20, 2023</p>
+                    <p class="blog-desc">The Fibonacci sequence is a sequence of numbers where each number is the sum of the two preceding ones. Discover how this mathematical pattern can be found in the milestones of your age.</p>
+                    <a href="./blogs/fibonacci-age.html" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-card">
+                <img src="./assets/pal.jpg" alt="Palindrome Numbers Age">
+                <div class="blog-content">
+                    <h2 class="blog-title"><a href="./blogs/palindrome-age.html">Palindrome Numbers: A Fun Twist on Your Age!</a></h2>
+                    <p class="post-date">Published on: November 5, 2023</p>
+                    <p class="blog-desc">What happens when your age becomes a palindrome number? Find out how palindromes play a role in your life and their unique properties in the world of numbers.</p>
+                    <a href="./blogs/palindrome-age.html" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="blog-card">
+                <img src="./assets/PS.jpg" alt="Perfect Squares Age">
+                <div class="blog-content">
+                    <h2 class="blog-title"><a href="./blogs/perfect-squares-age.html">Perfect Squares: Celebrate Special Age Milestones</a></h2>
+                    <p class="post-date">Published on: February 1, 2024</p>
+                    <p class="blog-desc">Perfect squares result from squaring whole numbers, like 4, 9, or 16. Explore why reaching these milestones in your age is both mathematical and memorable.</p>
+                    <a href="./blogs/perfect-squares-age.html" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Add more blog cards here following the same structure -->
+            <!-- Blog Post 5: Repeating Digits -->
+<div class="blog-card">
+    <img src="./assets/C.jpg" alt="Repeating Digits Age Image">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/repeating-digits-age.html">Repeating Digits in Your Age: A Unique Celebration</a></h2>
+        <p class="post-date">Published on: February 15, 2024</p>
+        <p class="blog-desc">Ages like 11, 22, or 333 are fun repeating digits with symmetry and rhythm. Learn how these milestones add excitement and uniqueness to your age.</p>
+        <a href="./blogs/repeating-digits-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 6: Astronomical Milestones -->
+<div class="blog-card">
+    <img src="./assets/A.jpg" alt="Astronomical Milestones Image">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/astronomical-milestones-age.html">Astronomical Milestones: Time and Space in Your Age</a></h2>
+        <p class="post-date">Published on: March 5, 2024</p>
+        <p class="blog-desc">Your age can align with cosmic events like planetary revolutions or solar cycles. Dive into the universe's mysteries and discover their ties to your milestones.</p>
+        <a href="./blogs/astronomical-milestones-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 7: Historical Events -->
+<div class="blog-card">
+    <img src="./assets/H.jpg" alt="Historical Events Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/historical-milestones-age.html">Historical Events and Your Age Milestones</a></h2>
+        <p class="post-date">Published on: March 20, 2024</p>
+        <p class="blog-desc">Align your age milestones with key historical events. Discover how important moments in history add significance to your journey of life and age.</p>
+        <a href="./blogs/historical-milestones-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 8: Cultural Milestones -->
+<div class="blog-card">
+    <img src="./assets/cel.jpg" alt="Cultural Milestones Age">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/cultural-milestones-age.html">Cultural Milestones: Celebrating Age Across the World</a></h2>
+        <p class="post-date">Published on: April 2, 2024</p>
+        <p class="blog-desc">From quinceañeras to coming-of-age traditions, explore how cultures worldwide celebrate milestones tied to specific ages in unique ways.</p>
+        <a href="./blogs/cultural-milestones-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 9: Pop Culture Milestones -->
+<div class="blog-card">
+    <img src="./assets/P.jpg" alt="Pop Culture Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/pop-culture-milestones-age.html">Pop Culture Milestones: Your Age in Movies, Music, and More</a></h2>
+        <p class="post-date">Published on: April 10, 2024</p>
+        <p class="blog-desc">Discover how pop culture—movies, songs, and celebrities—ties into your age milestones. Relive iconic moments from the years that match your age!</p>
+        <a href="./blogs/pop-culture-milestones-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 10: Mirror Number Milestones -->
+<div class="blog-card">
+    <img src="./assets/M.jpg" alt="Mirror Number Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/mirror-numbers-age.html">Mirror Numbers: When Your Age Reflects Symmetry</a></h2>
+        <p class="post-date">Published on: April 15, 2024</p>
+        <p class="blog-desc">Mirror numbers like 12 and 21 reflect symmetry and balance. Explore how these unique ages can mark significant milestones in your life's journey.</p>
+        <a href="./blogs/mirror-numbers-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 11: Triangular Number Milestones -->
+<div class="blog-card">
+    <img src="./assets/T.jpg" alt="Triangular Number Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/triangular-numbers-age.html">Triangular Numbers: Discover Your Age’s Hidden Geometry</a></h2>
+        <p class="post-date">Published on: April 18, 2024</p>
+        <p class="blog-desc">Triangular numbers form beautiful patterns in mathematics. Learn how ages like 1, 3, 6, and 10 mark milestones shaped by perfect triangles.</p>
+        <a href="./blogs/triangular-numbers-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 12: Leap Year Milestones -->
+<div class="blog-card">
+    <img src="./assets/L.jpg" alt="Leap Year Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/leap-year-age.html">Leap Year Milestones: Rare Ages for Special Birthdays</a></h2>
+        <p class="post-date">Published on: April 20, 2024</p>
+        <p class="blog-desc">Leap years occur every four years, but being born on February 29 makes you unique. Explore what leap year milestones mean for your age timeline.</p>
+        <a href="./blogs/leap-year-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 13: Twin Prime Milestones -->
+<div class="blog-card">
+    <img src="./assets/TP.jpg" alt="Twin Primes Age Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/twin-primes-age.html">Twin Primes: Special Pairs in Your Age Milestones</a></h2>
+        <p class="post-date">Published on: April 22, 2024</p>
+        <p class="blog-desc">Twin primes like 11 and 13 occur as close pairs of prime numbers. Learn how these numerical twins bring uniqueness to your age milestones.</p>
+        <a href="./blogs/twin-primes-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 14: Cube Number Milestones -->
+<div class="blog-card">
+    <img src="./assets/CNN.jpg" alt="Cube Number Age">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/cube-numbers-age.html">Cube Numbers: Celebrate Your Age in 3D!</a></h2>
+        <p class="post-date">Published on: April 25, 2024</p>
+        <p class="blog-desc">Cube numbers like 8 (2³) or 27 (3³) represent the power of three dimensions. Discover how reaching cube ages adds depth to your milestones.</p>
+        <a href="./blogs/cube-numbers-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 15: Golden Ratio Milestones -->
+<div class="blog-card">
+    <img src="./assets/GR.jpg" alt="Golden Ratio Age Milestones">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/golden-ratio-age.html">Golden Ratio: A Perfect Age Milestone in Nature and Life</a></h2>
+        <p class="post-date">Published on: April 28, 2024</p>
+        <p class="blog-desc">The golden ratio, approximately 1.618, appears in nature and art. Explore how your age milestones align with this universal and timeless pattern.</p>
+        <a href="./blogs/golden-ratio-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+<!-- Blog Post 16: Century Milestones -->
+<div class="blog-card">
+    <img src="./assets/cen.jpg" alt="Century Milestones Image">
+    <div class="blog-content">
+        <h2 class="blog-title"><a href="./blogs/century-milestones-age.html">Century Milestones: Marking 100 Years of Life and Beyond</a></h2>
+        <p class="post-date">Published on: April 30, 2024</p>
+        <p class="blog-desc">Reaching 100 years or centuries in your age is a monumental milestone. Learn about the celebrations, history, and significance of century milestones.</p>
+        <a href="./blogs/century-milestones-age.html" class="read-more">Read More</a>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Age in Days. All Rights Reserved.</p>
+        <ul>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="./terms-of-service.html">Terms of Service</a></li>
+            <li><a href="/About-Us.html">About Us</a></li>
+            <li><a href="/Contact-Us.html">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
