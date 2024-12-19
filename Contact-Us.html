@@ -19,8 +19,7 @@
     <!-- Favicon -->
     <link rel="icon" href="AID.jpg" type="image/x-icon">
 
-
-    <style>
+<style>
         /* General Reset */
         * {
             margin: 0;
@@ -43,7 +42,7 @@
         /* Left Section */
         .left-section {
             flex: 1;
-            background: url('AD.jpg') no-repeat center center/cover;
+            background: url('AgeinDays.jpg') no-repeat center center/cover;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -219,7 +218,12 @@
         <div class="right-section">
             <h2>Contact Us</h2>
             <p>Please fill in the form below to get in touch with us.</p>
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                 <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="c63b92b1-9d80-45df-88f1-afc55fa87bf7">
+                <input type="hidden" name="subject" value="New msg Form Age in Days!" />
+    <input type="hidden" name="from_name" value="Age in Days" />
+    
                 <label for="name">Name *</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 
@@ -231,13 +235,64 @@
 
                 <div class="checkbox-container">
                     <input type="checkbox" id="terms" required>
-                    <label for="terms">I've read and agree with <a href="/Terms-of-Service.html">Terms of Service</a> and <a href="/Privacy-Policy.html">Privacy Policy</a></label>
+                    <label for="terms">I've read and agree with <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
                 </div>
 
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
+
+
+
+
+<!-- Notifications -->
+<div id="form-success" style="display: none; color: green;">
+    Thank you! Your message has been sent successfully.
+</div>
+<div id="form-error" style="display: none; color: red;">
+    Oops! Something went wrong. Please try again later.
+</div>
+</div>
+
+<script>
+const form = document.querySelector("form");
+const successMessage = document.getElementById("form-success");
+const errorMessage = document.getElementById("form-error");
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault(); // Prevent default form submission
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+        });
+
+        if (response.ok) {
+            successMessage.style.display = "block";
+            errorMessage.style.display = "none";
+            form.reset();
+        } else {
+            throw new Error("Failed to submit the form.");
+        }
+    } catch (error) {
+        successMessage.style.display = "none";
+        errorMessage.style.display = "block";
+    }
+});
+</script>
+
+<style>
+input:invalid, textarea:invalid {
+    border: 2px solid rgb(209, 206, 209);
+}
+</style>
+
+
+
+
 
     <!-- Popup Overlay -->
 <div id="popup" class="popup-overlay">
@@ -250,11 +305,11 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2025 Age in Days. All rights reserved. | <a href="/">Home</a> | <a href="/blog.html">Blogs</a> | <a href="/Privacy-Policy.html">Privacy Policy</a> | <a href="/Terms-of-Service.html">Terms of Service</a> | <a href="/About-Us.html">About Us</a> | <a href="/Contact-Us.html">Contact Us</a>
+        &copy; 2024 Age in Days. All rights reserved. | <a href="/Privacy-Policy.html">Privacy Policy</a> | <a href="/Terms-of-Service.html">Terms of Service</a> | <a href="/About-Us.html">About Us</a> | <a href="/Contact-Us.html">Contact Us</a>
     </footer>
 
 
-    <!-- Add JavaScript for Popup -->
+    <!-- Add JavaScript for Popup --> 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const form = document.querySelector("form");
@@ -277,6 +332,9 @@
             popup.style.display = "none";
         });
     });
+
+
+    
 </script>
 </body>
 </html>
