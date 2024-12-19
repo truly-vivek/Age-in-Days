@@ -1,27 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://ageindays.vercel.app/</loc>
-  <lastmod>2024-12-09T08:35:15+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://ageindays.vercel.app/</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://ageindays.vercel.app/Privacy-Policy.html</loc>
-  <lastmod>2024-12-09T08:35:16+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ageindays.vercel.app/blogs/astronomical-milestones-age.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-  <loc>https://ageindays.vercel.app/Terms-of-Service.html</loc>
-  <lastmod>2024-12-09T08:35:16+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://ageindays.vercel.app/blogs/historical-milestones-age.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
-
-
+<url>
+	<loc>https://ageindays.vercel.app/blogs/mirror-numbers-age.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blog.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/Privacy-Policy.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/Terms-of-Service.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/About-Us.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/Contact-Us.html</loc>
+	<lastmod>2024-12-19T14:38:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/prime-numbers-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/fibonacci-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/palindrome-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/perfect-squares-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/repeating-digits-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/cultural-milestones-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/pop-culture-milestones-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/triangular-numbers-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/leap-year-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/twin-primes-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/cube-numbers-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/golden-ratio-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/blogs/century-milestones-age.html</loc>
+	<lastmod>2024-12-19T14:38:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://ageindays.vercel.app/index.html</loc>
+	<lastmod>2024-12-19T14:38:36+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>
