@@ -84,8 +84,6 @@ Developed with ❤️ by [Vivek](https://github.com/truly-vivek).
 Have questions or feedback? Feel free to reach out:
 
 - **Email**: [vivek](vivekreddykesavarapu@gmail.com)
-- **GitHub**: [vivek](https://github.com/truly-vivek)
-
 ---
 
 ✨ _Let’s calculate your milestones together!_ ✨
